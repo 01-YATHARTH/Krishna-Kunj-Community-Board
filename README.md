@@ -39,26 +39,26 @@ This application includes:
 
 ---
 
-<details> <summary><strong>📁 Folder Structure</strong></summary>
-Project Root
-├── admin.html
-├── admin.css
-├── admin_login.js
-├── admin_view_contact.html
-├── admin_view_submissions.js
-├── contact_us.html
-├── contact.js
-├── dashboard.html
-├── dashboard.js
-├── dashboard_delete.js
-├── dashboard_delete_announcement.html
-├── dashboard_delete_marketplace.html
-├── index.html
-├── market_place.html
-├── market_place.js
-├── script.js
-├── style.css
-</details>
+
+## 📁 Folder Structure
+├── index.html # Landing page
+├── style.css # Global styles
+├── script.js # General JS for index
+├── contact_us.html # Contact form UI
+├── contact.js # JS for contact form
+├── market_place.html # Marketplace listings
+├── market_place.js # JS for marketplace page
+├── admin.html # Admin login page
+├── admin_login.js # JS for admin login
+├── dashboard.html # Admin dashboard page
+├── dashboard.js # JS for dashboard interactivity
+├── dashboard_delete_announcement.html # Delete announcements page
+├── dashboard_delete_marketplace.html # Delete marketplace items page
+├── dashboard_delete.js # JS for delete functionality
+├── admin_view_contact.html # View contact submissions
+├── admin_view_submissions.js # JS for admin viewing contacts
+├── admin.css # Admin-specific styles
+
 
 ## 🧱 Folder & Core Files Explained
 
