@@ -145,7 +145,7 @@ This application includes:
 ![Marketplace Listing Dashboard](assets/marketplace_listing_dashboard.png)
 
 #### 🗑️ Manage Marketplace Listings  
-![Manage Listings](assetss/manage_listings.png)
+![Manage Listings](assets/manage_listings.png)
 
 #### 📬 Contact Submissions View  
 ![Contact Submissions](assets/contact_submissions.png)
