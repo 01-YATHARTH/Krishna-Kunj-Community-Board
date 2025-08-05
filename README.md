@@ -124,10 +124,15 @@ This application includes:
 
 ---
 
+### 🔷 `contact_us.html` - Contact Us Page
+![Contact Us Page](assets/contact.png)
+
+---
+
 ### 🔷 `admin.html` - Admin Panel
 
 #### 🔑 Admin Login Panel  
-![Admin Login](screenshots/admin_login.png)
+![Admin Login](assets/admin_login.png)
 
 ---
 
