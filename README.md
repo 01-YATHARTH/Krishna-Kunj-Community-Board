@@ -84,9 +84,7 @@ This application includes:
 | `dashboard_delete.js` | Handles delete operations for both panels |
 | `script.js` | Common script for general utilities and functions |
 | `style.css` | Styling for public pages (marketplace, index, contact) |
-| `.firebaserc` | Firebase project config (auto-generated) |
-| `.gitignore` | Files/folders to ignore in version control |
-| `firebase.json` | Firebase hosting config (auto-generated during deployment) |
+
 
 ---
 
