@@ -101,13 +101,13 @@ This application includes:
 ### 🔷 `index.html` - Home Page
 
 #### 🏠 Home Section  
-![Home Section](screenshots/home_section.png)
+![Home Section](assets/home_section.png)
 
 #### 📢 Announcements Section  
-![Announcement Section](screenshots/announcement_section.png)
+![Announcement Section](assets/announcement_section.png)
 
 #### 🔗 Footer Section  
-![Footer](screenshots/home_footer.png)
+![Footer](assets/home_footer.png)
 
 ---
 
