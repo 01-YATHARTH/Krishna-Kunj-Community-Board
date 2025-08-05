@@ -43,7 +43,7 @@ This application includes:
 
 
 ## 📁 Folder Structure
-
+```
 ├── index.html # Landing page
 ├── style.css # Global styles
 ├── script.js # General JS for index
@@ -61,7 +61,7 @@ This application includes:
 ├── admin_view_contact.html # View contact submissions
 ├── admin_view_submissions.js # JS for admin viewing contacts
 ├── admin.css # Admin-specific styles
-
+```
 
 ## 🧱 Folder & Core Files Explained
 
