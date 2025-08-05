@@ -40,7 +40,10 @@ This application includes:
 ---
 
 
+
+
 ## 📁 Folder Structure
+
 ├── index.html # Landing page
 ├── style.css # Global styles
 ├── script.js # General JS for index
