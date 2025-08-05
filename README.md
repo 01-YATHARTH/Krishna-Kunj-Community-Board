@@ -91,7 +91,7 @@ This application includes:
 ## 🌐 Hosting
 
 > Hosted on Firebase using `firebase deploy`  
-🔗 **Live URL** (replace with yours):  
+🔗 **Live URL**  
 [https://krishna-kunj-community-board.web.app](https://krishna-kunj-edffe.web.app/index.html)
 
 ---
