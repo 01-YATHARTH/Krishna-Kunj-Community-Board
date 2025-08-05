@@ -114,13 +114,13 @@ This application includes:
 ### 🔷 `marketplace.html` - Marketplace Page
 
 #### 🔼 Top Section  
-![Marketplace Top](screenshots/marketplace_top.png)
+![Marketplace Top](assets/marketplace_top.png)
 
 #### 🔁 Middle Section  
-![Marketplace Middle](screenshots/marketplace_middle.png)
+![Marketplace Middle](assets/marketplace_middle.png)
 
 #### 🔽 Bottom Section  
-![Marketplace Bottom](screenshots/marketplace_bottom.png)
+![Marketplace Bottom](assets/marketplace_bottom.png)
 
 ---
 
@@ -134,19 +134,19 @@ This application includes:
 ### 🔷 `admin_dashboard.html` - Admin Dashboard
 
 #### 🧑‍💼 Personal Announcement Dashboard  
-![Personal Announcement Dashboard](screenshots/personal_announcement.png)
+![Personal Announcement Dashboard](assets/personal_announcement.png)
 
 #### 🛒 Marketplace Listing Dashboard  
-![Marketplace Listing Dashboard](screenshots/marketplace_listing_dashboard.png)
+![Marketplace Listing Dashboard](assets/marketplace_listing_dashboard.png)
 
 #### 🗑️ Manage Marketplace Listings  
-![Manage Listings](screenshots/manage_listings.png)
+![Manage Listings](assetss/manage_listings.png)
 
 #### 📬 Contact Submissions View  
-![Contact Submissions](screenshots/contact_submissions.png)
+![Contact Submissions](assets/contact_submissions.png)
 
 #### 📢 Manage Announcements  
-![Manage Announcements](screenshots/manage_announcements.png)
+![Manage Announcements](assets/manage_announcements.png)
 
 ---
 
