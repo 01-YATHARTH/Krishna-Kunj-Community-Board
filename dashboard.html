@@ -1,0 +1,112 @@
+<!-- 
+   ================================================================================================
+ * Filename: dashboard.html
+ * Description: Admin dashboard for Krishna Kunj Community. 
+ *              Allows posting announcements and marketplace listings. 
+ *              Includes responsive admin navbar with toggle.
+   ================================================================================================
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character encoding for correct text rendering -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsive viewport for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title in browser tab -->
+  <title>Admin Dashboard - Krishna Kunj</title>
+
+  <!-- Admin-specific stylesheet -->
+  <link rel="stylesheet" href="admin.css" />
+
+  <!-- Google Fonts for consistent typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="dashboard-body">
+
+  <!-- ================================
+       Navigation Bar (Admin)
+       ================================ -->
+  <nav class="admin-navbar">
+    <!-- Menu toggle (responsive) -->
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+
+    <!-- Branding -->
+    <h1 class="logo-text">Krishna Kunj</h1>
+
+    <!-- Navigation links -->
+    <ul id="admin-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Admin Dashboard</a></li>
+      <li><a href="dashboard_delete_announcement.html">Manage Announcements</a></li>
+      <li><a href="dashboard_delete_marketplace.html" class="active">Manage Listings</a></li>
+      <li><a href="admin_view_contact.html">Contact Submissions</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================================
+       Page Heading
+       ================================ -->
+  <header class="main-heading">
+    <h1>Admin Dashboard</h1>
+  </header>
+
+  <main>
+    <!-- ================================
+         Announcement Section
+         ================================ -->
+    <h2 class="dashboard-section-title">Post an Announcement</h2>
+    <section class="dashboard-card">
+      <!-- Announcement form -->
+      <form class="dashboard-form" id="announcementForm">
+        <input type="text" name="title" placeholder="Announcement Title" required />
+        <textarea name="detail" placeholder="Announcement Description" rows="4" required></textarea>
+        <input type="date" name="date" required />
+        <input type="time" name="time" required />
+        <button type="submit">Post Announcement</button>
+      </form>
+    </section>
+
+    <!-- ================================
+         Marketplace Listing Section
+         ================================ -->
+    <h2 class="dashboard-section-title">Marketplace Listing</h2>
+    <section class="dashboard-card">
+      <!-- Marketplace listing form -->
+      <form class="dashboard-form" id="marketplaceForm">
+        <input type="text" name="sellerName" placeholder="Item Name" required />
+        <input type="text" name="imageUrl" placeholder="Image URL (paste link)" required />
+        <input type="tel" name="contact" placeholder="Seller's Name and Contact Number" required />
+        <input type="email" name="email" placeholder="Seller Email" required />
+        <textarea name="description" placeholder="Item Description" rows="4" required></textarea>
+        <input type="text" name="price" placeholder="Price (in ₹)" required />
+        <button type="submit">Post Listing</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ================================
+       Script Integration
+       ================================ -->
+  <!-- Dashboard logic module -->
+  <script type="module" src="dashboard.js"></script>
+
+  <!-- Inline menu toggle function for responsive nav -->
+  <script>
+    /**
+     * Toggles visibility of admin nav links by toggling 'active' class.
+     */
+    function toggleMenu() {
+      const navLinks = document.getElementById('admin-nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>

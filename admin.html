@@ -1,0 +1,91 @@
+<!-- 
+   ================================================================================================
+ * Filename: admin.html
+ * Description: Admin login page for Krishna Kunj Community. 
+ *              Includes responsive navbar with toggle, and a secure password login form.
+ *              Preserves existing IDs, classes, and core functionality.
+   ================================================================================================
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character encoding for correct text rendering -->
+  <meta charset="UTF-8" />
+
+  <!-- Viewport for responsive scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title shown in browser tab -->
+  <title>Admin Login | Krishna Kunj</title>
+
+  <!-- External stylesheet for admin-specific styles -->
+  <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+
+  <!-- ================================
+       Navigation Bar (Admin)
+       ================================ -->
+  <nav class="admin-navbar">
+    <!-- Menu toggle button for mobile / collapsed view -->
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+
+    <!-- Site branding / logo text -->
+    <h1 class="logo-text">Krishna Kunj</h1>
+
+    <!-- Navigation links container -->
+    <ul id="admin-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#announcements">Announcements</a></li>
+      <li><a href="market_place.html">Marketplace</a></li>
+      <li><a href="admin.html">Admin Panel</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================================
+       Admin Login Section
+       ================================ -->
+  <section class="admin-login">
+    <!-- Primary heading -->
+    <h1>Admin Login</h1>
+
+    <!-- Login form: user must supply admin password -->
+    <form id="admin-login-form">
+      <!-- Password input (required) -->
+      <input
+        type="password"
+        id="admin-password"
+        placeholder="Enter admin password"
+        required
+      />
+
+      <!-- Submit button to attempt login -->
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <!-- ================================
+       JavaScript Integration
+       ================================ -->
+  <!-- External script handling admin login logic -->
+  <script src="admin_login.js"></script>
+
+  <!-- Inline toggle function for nav menu (preserves existing behavior) -->
+  <script>
+    /**
+     * Toggles the visibility of the admin navigation links by toggling the 'active' class.
+     * This supports mobile / collapsed menu behavior.
+     */
+    function toggleMenu() {
+      const navLinks = document.getElementById('admin-nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>

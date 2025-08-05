@@ -1,0 +1,94 @@
+<!-- 
+   ================================================================================================
+ * Filename: dashboard_delete_announcement.html
+ * Description: Admin interface for managing (deleting) community announcements. 
+ *              Displays a table of announcements with actions, includes responsive admin navbar.
+   ================================================================================================
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character encoding -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Delete Announcements - Admin Panel</title>
+
+  <!-- Admin-specific stylesheet -->
+  <link rel="stylesheet" href="admin.css" />
+
+  <!-- Google Font used in admin UI -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ================================
+       Admin Navigation Bar
+       ================================ -->
+  <nav class="admin-navbar">
+    <!-- Toggle for collapsing/expanding menu on small screens -->
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+
+    <!-- Branding / logo text -->
+    <h1 class="logo-text">Krishna Kunj</h1>
+
+    <!-- Navigation links for admin sections -->
+    <ul id="admin-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Admin Dashboard</a></li>
+      <li><a href="dashboard_delete_announcement.html">Manage Announcements</a></li>
+      <li><a href="dashboard_delete_marketplace.html">Manage Listings</a></li>
+      <li><a href="admin_view_contact.html">Contact Submissions</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================================
+       Main Content Area
+       ================================ -->
+  <main class="admin-container">
+    <!-- Section heading -->
+    <h2 class="contact-heading">Manage Announcements</h2>
+
+    <!-- Announcements table with headers; body populated via JavaScript -->
+    <table class="table-listing">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Timestamp</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="dashboard-announcement-list">
+        <!-- Filled dynamically by JS -->
+      </tbody>
+    </table>
+  </main>
+
+  <!-- ================================
+       Script Integration
+       ================================ -->
+  <!-- Module responsible for announcement deletion logic -->
+  <script type="module" src="dashboard_delete.js"></script>
+
+  <!-- Inline toggle function for admin nav menu -->
+  <script>
+    /**
+     * Toggles the 'active' class on the admin nav links to show/hide menu (for responsive).
+     */
+    function toggleMenu() {
+      const navLinks = document.getElementById('admin-nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>

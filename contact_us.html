@@ -1,0 +1,136 @@
+<!-- 
+   ================================================================================================
+ * Filename: contact_us.html
+ * Description: Contact page for Krishna Kunj Community Board. 
+ *              Includes a modern contact form, navigation, and footer. 
+ *              Preserves existing IDs, classes, and expected behavior.
+   ================================================================================================
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character encoding for proper text rendering -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsive viewport configuration for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Browser tab title -->
+  <title>Krishna Kunj | Community Board</title>
+
+  <!-- External stylesheet reference (preserves styling) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts used in the design -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ================================
+       Header / Navigation Bar
+       ================================ -->
+  <header class="navbar">
+    <!-- Logo with emphasized part inside span -->
+    <div class="logo">
+      Krishna <span>Kunj</span>
+    </div>
+
+    <!-- Mobile menu toggle button for responsive use -->
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+
+    <!-- Primary navigation links -->
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#announcements">Announcements</a></li>
+        <li><a href="market_place.html">Marketplace</a></li>
+        <li><a href="admin.html">Admin Panel</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================================
+       Contact Section
+       ================================ -->
+  <section id="contact" class="contact-section">
+    <!-- Section heading with emoji for visual flair -->
+    <h2><span class="emoji">📬</span> Let's Get In Touch</h2>
+
+    <!-- Subtext / alternate contact method -->
+    <p class="quote-sub">Or just reach out manually to help@krishnakunj.com</p>
+
+    <!-- Contact form: method and action preserved (currently placeholder) -->
+    <form class="form-modern" action="#" method="post">
+
+      <!-- Full Name input group -->
+      <div class="form-group name">
+        <input type="text" id="name" name="name" required placeholder=" " />
+        <label for="name">Full Name</label>
+      </div>
+
+      <!-- Email input group -->
+      <div class="form-group email">
+        <input type="email" id="email" name="email" required placeholder=" " />
+        <label for="email">Email Address</label>
+      </div>
+
+      <!-- Phone number input group -->
+      <div class="form-group phone">
+        <input type="tel" id="phone" name="phone" required placeholder=" " />
+        <label for="phone">Phone Number</label>
+      </div>
+
+      <!-- Message textarea group -->
+      <div class="form-group message">
+        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+        <label for="message">Message</label>
+      </div>
+
+      <!-- Agreement checkbox for privacy policy -->
+      <div class="form-agree">
+        <input type="checkbox" id="agree" required />
+        <label for="agree">I hereby agree to the privacy policy terms.</label>
+      </div>
+
+      <!-- Submit button wrapper -->
+      <div class="submit-wrapper">
+        <button type="submit" class="submit-modern">Submit Form →</button>
+      </div>
+
+    </form>
+  </section>
+
+  <!-- ================================
+       Footer
+       ================================ -->
+  <footer class="modern-footer">
+    <div class="footer-content">
+      <!-- Footer branding/logo -->
+      <h2 class="footer-logo">Krishna Kunj</h2>
+
+      <!-- Inspirational/friendly quote -->
+      <p class="footer-quote">"Where unity meets community — Krishna Kunj 🌸"</p>
+
+      <!-- Static copyright line -->
+      <p class="footer-copy">© 2025 Krishna Kunj. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================================
+       JavaScript Integration
+       ================================ -->
+  <!-- Module script for contact form logic (preserves existing functionality) -->
+  <script type="module" src="contact.js"></script>
+
+  <!-- Shared module: navbar toggle + Firebase announcements -->
+  <script type="module" src="script.js"></script>
+
+
+</body>
+
+</html>

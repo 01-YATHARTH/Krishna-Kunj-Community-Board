@@ -1,0 +1,97 @@
+<!-- 
+ ================================================================================================
+ * Filename: market_place.html
+ * Description: Marketplace page for Krishna Kunj Community. 
+ *              Displays community marketplace listings and includes navigation, footer, 
+ *              and script integration for dynamic content loading.
+ ================================================================================================
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character encoding -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsive viewport for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title shown in the browser tab -->
+  <title>Marketplace - Krishna Kunj</title>
+
+  <!-- External stylesheet (preserves existing styling) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts: Poppins, Inter, Roboto Slab -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ================================
+       Header / Navigation Bar
+       ================================ -->
+  <header class="navbar">
+    <!-- Logo with styled span for emphasis -->
+    <div class="logo">
+      Krishna <span>Kunj</span>
+    </div>
+
+    <!-- Mobile menu toggle button for small viewports -->
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+
+    <!-- Primary navigation links -->
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#announcements">Announcements</a></li>
+        <li><a href="#marketplace">Marketplace</a></li>
+        <li><a href="admin.html">Admin Panel</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================================
+       Marketplace Section
+       ================================ -->
+  <section class="marketplace-section" id="marketplace">
+    <!-- Section heading with optional emoji placeholder -->
+    <h2><span class="emoji"></span>Marketplace</h2>
+
+    <!-- Grid container where JavaScript will inject marketplace item cards -->
+    <div class="marketplace-grid">
+      <!-- JS injects .marketplace-card elements here -->
+    </div>
+  </section>
+
+  <!-- ================================
+       Footer
+       ================================ -->
+  <footer class="modern-footer">
+    <div class="footer-content">
+      <!-- Footer branding -->
+      <h2 class="footer-logo">Krishna Kunj</h2>
+
+      <!-- Inspirational quote -->
+      <p class="footer-quote">"Where unity meets community — Krishna Kunj 🌸"</p>
+
+      <!-- Copyright notice -->
+      <p class="footer-copy">© 2025 Krishna Kunj. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================================
+       Script Integration
+       ================================ -->
+
+  <!-- Module responsible for loading marketplace items dynamically -->
+  <script type="module" src="market_place.js"></script>
+
+  <!-- Shared script (e.g., for common utilities or announcement logic) -->
+  <script src="script.js"></script>
+</body>
+
+</html>

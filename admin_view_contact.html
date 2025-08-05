@@ -1,0 +1,77 @@
+<!-- 
+   ================================================================================================
+ * Filename: admin_view_contact.html
+ * Description: Admin interface to view contact form submissions. 
+ *              Includes responsive admin navbar and placeholder for dynamic submission list.
+   ================================================================================================
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character encoding for text -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsive viewport for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Browser tab title (note: currently says "Admin Login"—you can change to reflect contact submissions if desired) -->
+  <title>Contact Submissions | Krishna Kunj</title>
+
+  <!-- Admin-specific stylesheet -->
+  <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+
+  <!-- ================================
+       Admin Navigation Bar
+       ================================ -->
+  <nav class="admin-navbar">
+    <!-- Toggle button for mobile/responsive menu -->
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+
+    <!-- Branding / logo text -->
+    <h1 class="logo-text">Krishna Kunj</h1>
+
+    <!-- Navigation links -->
+    <ul id="admin-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Admin Dashboard</a></li>
+      <li><a href="dashboard_delete_announcement.html">Manage Announcements</a></li>
+      <li><a href="dashboard_delete_marketplace.html">Manage Listings</a></li>
+      <li><a href="admin_view_contact.html" class="active">Contact Submissions</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================================
+       Contact Submissions Header
+       ================================ -->
+  <h2 class="contact-heading">📩 Contact Form Submissions</h2>
+
+  <!-- Container where submissions will be injected by JavaScript -->
+  <div id="contactList">Loading...</div>
+
+  <!-- Bottom spacing to prevent content from sticking to bottom -->
+  <div class="bottom-spacer"></div>
+
+  <!-- ================================
+       Script Integration
+       ================================ -->
+  <!-- Inline navigation toggle logic for responsive menu -->
+  <script>
+    /**
+     * Toggles the visibility of admin nav links by toggling 'active' class.
+     */
+    function toggleMenu() {
+      const navLinks = document.getElementById('admin-nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+  <!-- Module responsible for fetching and displaying contact submissions -->
+  <script type="module" src="admin_view_submissions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!--
+  ================================================================================================ 
+ * Filename: dashboard_delete_marketplace.html
+ * Description: Admin interface for managing (deleting) marketplace listings. 
+ *              Displays a table of listings with actions, includes responsive admin navbar.
+   ================================================================================================
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character encoding for proper rendering -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Browser tab title -->
+  <title>Delete Marketplace Listings - Admin Panel</title>
+
+  <!-- Admin-specific stylesheet -->
+  <link rel="stylesheet" href="admin.css" />
+
+  <!-- Google Font for consistent typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ================================
+       Admin Navigation Bar
+       ================================ -->
+  <nav class="admin-navbar">
+    <!-- Toggle button for mobile/responsive menu -->
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">☰</button>
+
+    <!-- Branding text -->
+    <h1 class="logo-text">Krishna Kunj</h1>
+
+    <!-- Admin navigation links -->
+    <ul id="admin-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Admin Dashboard</a></li>
+      <li><a href="dashboard_delete_announcement.html">Manage Announcements</a></li>
+      <li><a href="dashboard_delete_marketplace.html" class="active">Manage Listings</a></li>
+      <li><a href="admin_view_contact.html">Contact Submissions</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================================
+       Main Content
+       ================================ -->
+  <main class="admin-container">
+    <!-- Section header -->
+    <h2 class="contact-heading">Manage Marketplace Listings</h2>
+
+    <!-- Table of marketplace items; populated dynamically via JS -->
+    <table class="table-listing">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Item Name</th>
+          <th>Image</th>
+          <th>Seller Name &amp; Contact</th>
+          <th>Seller Email</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Timestamp</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="dashboard-marketplace-list">
+        <!-- Filled dynamically by dashboard_delete.js -->
+      </tbody>
+    </table>
+  </main>
+
+  <!-- ================================
+       Script Integration
+       ================================ -->
+  <!-- Shared module for deletion logic (assumed to handle both announcements & marketplace) -->
+  <script type="module" src="dashboard_delete.js"></script>
+
+  <!-- Inline function to toggle admin nav visibility (for responsive/mobile) -->
+  <script>
+    /**
+     * Toggles the 'active' class on admin nav links to expand/collapse menu.
+     */
+    function toggleMenu() {
+      const navLinks = document.getElementById('admin-nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>
