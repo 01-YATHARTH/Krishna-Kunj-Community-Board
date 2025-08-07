@@ -157,7 +157,7 @@ This application includes:
 
 ## 🚀 Deployment
 
-This project is hosted using **Firebase Hosting**. All files are properly placed in the `public/` folder (as required by Firebase), and the `firebase.json` was generated automatically by Firebase CLI.
+This project is hosted using **Firebase Hosting**. All files are properly placed in the `public/` folder (as required by Firebase).
 
 ---
 
